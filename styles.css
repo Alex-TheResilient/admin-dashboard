@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 1fr;
+  min-height: 100vh;
+  grid-template-areas:
+    'sidebar header header'
+    'sidebar content content';
+}
+
+.container header {
+  background: #09f;
+  grid-area: header;
+}
+
+.container aside {
+  background: #f90;
+  grid-area: sidebar;
+}
+
+.container main {
+  background: #0f9;
+  grid-area: content;
+}
